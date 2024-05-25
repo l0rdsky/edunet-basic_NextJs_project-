@@ -32,7 +32,7 @@ export const MenuItem = ({
       >
         {item}
       </motion.p>
-      {active !== null && (
+      {active !== null && children &&(
         <motion.div
           initial={{ opacity: 0, scale: 0.85, y: 10 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -70,7 +70,7 @@ export const Menu = ({
   return (
     <nav
       onMouseLeave={() => setActive(null)} // resets the state
-      className="relative rounded-full boder border-transparent dark:bg-black dark:border-white/[0.2] bg-white shadow-input flex justify-center space-x-4 px-8 py-6 "
+      className=" relative rounded-full boder border-transparent dark:bg-black dark:border-white/[0.2] bg-white shadow-input flex justify-center space-x-4 px-8 py-6 "
     >
       {children}
     </nav>

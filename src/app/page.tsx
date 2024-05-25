@@ -1,7 +1,11 @@
-
-
+import HeroSection from "@/components/HeroSection";
+import CardHover from "@/components/CardHover";
 export default function Home() {
   return (
-    <h1>Hello Akash</h1>
+   <>
+  
+    <HeroSection></HeroSection>
+{/* <CardHover></CardHover> */}
+   </> 
   );
 }
