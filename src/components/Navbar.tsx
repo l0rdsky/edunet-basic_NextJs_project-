@@ -24,33 +24,35 @@ export default function Navbar({ className }: { className?: string }) {
         <MenuItem setActive={setActive} active={active} item="Home">
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Courses">
-          <div className="  text-sm grid grid-cols-2 gap-10 p-4">
-            <ProductItem
-              title="Frontend Development   "
-              href="https://algochurn.com"
-              src="https://assets.aceternity.com/demos/algochurn.webp"
-              description="Prepare for tech interviews like never before."
-            />
-            <ProductItem
-              title="Tailwind Master Kit"
-              href="https://tailwindmasterkit.com"
-              src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
-              description="Production ready Tailwind css components for your next project"
-            />
-            <ProductItem
-              title="Moonbeam"
-              href="https://gomoonbeam.com"
-              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
-              description="Never write from scratch again. Go from idea to blog in minutes."
-            />
-            <ProductItem
-              title="Rogue"
-              href="https://userogue.com"
-              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
-              description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
-            />
-          </div>
-        </MenuItem>
+  <div className="text-sm ml-36 grid grid-cols-1 sm:grid-cols-2 gap-10 p-4">
+    <ProductItem
+      title="Frontend Development"
+      href="https://www.scaler.com/"
+      src="https://assets.aceternity.com/demos/algochurn.webp"
+      description="Learn HTML, CSS, JavaScript, and modern frameworks to build stunning web interfaces."
+    />
+    <ProductItem
+      title="Tailwind Master Kit"
+      href="https://tailwindmasterkit.com"
+      src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
+      description="Production ready Tailwind css components for your next project."
+    />
+    <ProductItem
+      title="Backend Development"
+      href="https://www.scaler.com/"
+      src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
+      description="Master server-side programming with Node.js, Express, databases, and more."
+    
+    />
+    <ProductItem
+      title="Kubernetes"
+      href="https://www.scaler.com/"
+      src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
+      description="Learn container orchestration with Kubernetes and manage your microservices."
+    />
+  </div>
+</MenuItem>
+
         <MenuItem setActive={setActive} active={active} item="Others">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/hobby">About Us</HoveredLink>
