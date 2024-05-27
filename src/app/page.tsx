@@ -1,6 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import StickyScrollRevealDemo from "@/components/StickyScrollBar";
-
+import Footer from "@/components/Footer";
 import WavyBackgroundDemo from "@/components/WavyBackground";
 import LampDemo from "@/components/Lampdemo";
 
@@ -8,7 +8,7 @@ import LampDemo from "@/components/Lampdemo";
 export default function Home() {
   return (
    <>
-  
+   
     <HeroSection></HeroSection>
     <StickyScrollRevealDemo></StickyScrollRevealDemo>
     {/* <GridBackgroundDemo>
@@ -16,6 +16,7 @@ export default function Home() {
     <LampDemo>
     </LampDemo>
     <WavyBackgroundDemo></WavyBackgroundDemo>
+    <Footer></Footer>
     {/* <InfiniteMovingCardsDemo></InfiniteMovingCardsDemo> */}
    </> 
   );

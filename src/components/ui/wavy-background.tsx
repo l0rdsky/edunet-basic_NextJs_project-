@@ -40,7 +40,7 @@ export const WavyBackground = ({
       case "slow":
         return 0.001;
       case "fast":
-        return 0.002;
+        return 0.005;
       default:
         return 0.001;
     }
@@ -112,7 +112,7 @@ export const WavyBackground = ({
   return (
     <div
       className={cn(
-        "absolute h-screen flex flex-col items-center justify-center",
+        "relative flex flex-col items-center justify-center",
         containerClassName
       )}
     >
